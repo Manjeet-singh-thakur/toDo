@@ -1,0 +1,63 @@
+.text {
+  width: 39.2%;
+  padding: 8px;
+  outline: none;
+  border: 1px solid;
+}
+.text {
+  width: 40%;
+  padding: 8px;
+  outline: none;
+  border: 1px solid;
+}
+.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 400px;
+}
+.text1 {
+  width: 40%;
+  padding: 8px;
+  outline: none;
+  border: 1px solid;
+}
+
+@media (max-width: 768px) {
+  .text {
+    width: 90%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid;
+  }
+
+  .ol {
+    width: 100%;
+    text-align: left;
+    margin-left: -15px;
+    word-wrap: break-word;
+  }
+  .text1 {
+    width: 80%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid;
+  }
+  .show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 147px;
+  }
+  .incom {
+    text-align: left;
+    margin-left: 5px;
+  }
+  button {
+    background-color: transparent;
+    padding: 7px;
+    width: auto;
+    margin-left: 2px;
+    border: 1px solid;
+  }
+}
