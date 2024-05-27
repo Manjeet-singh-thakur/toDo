@@ -97,7 +97,7 @@ select {
     display: flex;
     align-items: baseline;
     gap: 7px;
-    margin-top: 0px;
+    margin-top: 1px;
   }
   .priority {
     margin-bottom: -13px;

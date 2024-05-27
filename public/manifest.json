@@ -3,24 +3,24 @@
   "name": "To-Do By Manjeet",
   "icons": [
     {
-      "src": "bird_2.jpg.jpeg",
+      "src": "bird_2.jpg.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/jpg"
     },
     {
-      "src": "favicon.ico",
+      "src": "bird_2.jpg.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/jpg"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "bird_2.jpg.jpg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/jpg"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "bird_2.jpg.jpg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/jpg"
     }
   ],
   "start_url": ".",
