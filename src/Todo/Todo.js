@@ -99,32 +99,86 @@ const Todo = () => {
       );
     }
   };
+  const setPrior = (value, index) => {
+    const data = [...list];
+    if (!data[index].completed) {
+      data[index].priority = value;
+      setList(data);
+    }
+  };
 
-  const displayTasks = (tasks, isCompleted) =>
-    tasks.map((item, index) => (
-      <div key={index}>
-        <div>
-          <p>Main Task : {item.task}</p>
-          <ol className="ol">
-            {item.subtasks.map((subtask, subIndex) => (
-              <li key={subIndex}>Subtask : {subtask}</li>
-            ))}
-          </ol>
-        </div>
-        <button onClick={() => deleteValue(index, isCompleted)}>Delete</button>
-        <button onClick={() => editValue(index, isCompleted)}>Edit</button>
-        {isCompleted ? (
-          ""
-        ) : (
-          <button onClick={() => addSubtask(index, isCompleted)}>
-            Add Subtask
+  const displayTasks = (tasks, isCompleted) => {
+    console.log("list", list);
+
+    return tasks
+      .sort((a, b) => {
+        return b.priority - a.priority;
+      })
+      .map((item, index) => (
+        <div key={index}>
+          <div style={{marginLeft:"5px"}}>
+            <p>
+              Priority Level :{" "}
+              {item.priority === "3"
+                ? "High"
+                : item.priority === "2"
+                ? "Medium"
+                : "Low"}
+            </p>
+            <p
+              style={{
+                display: "flex",
+                alignContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <p className="dot"></p> : {item.task}
+            </p>
+
+            <ol className="ol">
+              {item.subtasks.map((subtask, subIndex) => (
+                <li
+                  className="li1"
+                  style={{ listStyle: "none" }}
+                  key={subIndex}
+                >
+                  <p className="dot1"></p> : {subtask}
+                </li>
+              ))}
+            </ol>
+          </div>
+          <button onClick={() => deleteValue(index, isCompleted)}>
+            Delete
           </button>
-        )}
-        {!isCompleted && (
-          <button onClick={() => completed(index)}>Mark Complete</button>
-        )}
-      </div>
-    ));
+          <button onClick={() => editValue(index, isCompleted)}>Edit</button>
+          {isCompleted ? (
+            ""
+          ) : (
+            <>
+              <select
+                value={item.priority}
+                onChange={(e) => setPrior(e.target.value, index)}
+              >
+                <option value="3">High</option>
+                <option value="2">Medium</option>
+                <option value="1">Low</option>
+              </select>
+            </>
+          )}
+
+          {isCompleted ? (
+            ""
+          ) : (
+            <button onClick={() => addSubtask(index, isCompleted)}>
+              Add Subtask
+            </button>
+          )}
+          {!isCompleted && (
+            <button onClick={() => completed(index)}>Mark Complete</button>
+          )}
+        </div>
+      ));
+  };
 
   return (
     <>

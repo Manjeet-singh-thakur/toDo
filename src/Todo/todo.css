@@ -22,7 +22,25 @@
   outline: none;
   border: 1px solid;
 }
-
+select {
+  padding: 7px;
+  border: 1px solid black;
+  background: no-repeat;
+  margin-left: 2px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: black;
+  margin-right: 5px;
+}
+.dot1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.377);
+}
 @media (max-width: 768px) {
   .text {
     width: 90%;
@@ -30,12 +48,31 @@
     outline: none;
     border: 1px solid;
   }
+  .li1 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    margin-right: 5px;
+  }
+  .dot1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.377);
+  }
 
   .ol {
-    width: 100%;
+    width: 90%;
     text-align: left;
     margin-left: -15px;
     word-wrap: break-word;
+    word-break: break-all;
   }
   .text1 {
     width: 80%;
