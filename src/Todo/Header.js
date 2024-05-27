@@ -3,7 +3,10 @@ const Header = () => {
   return (
     <>
       <nav className="main">
-        <div className="main">To-Do</div>
+        <div className="logo">
+          <img src="bird_2.jpg" alt="Logo" />
+        </div>
+        <div className="text">To-Do</div>
       </nav>
     </>
   );

@@ -47,6 +47,9 @@ select {
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.377);
 }
+.logo {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .text {
@@ -54,6 +57,12 @@ select {
     padding: 8px;
     outline: none;
     border: 1px solid;
+  }
+  .logo {
+    display: block;
+  }
+  .text {
+    display: none;
   }
 
   select {
@@ -80,7 +89,7 @@ select {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background:black;
+    background: black;
     margin-right: 5px;
     flex-shrink: 0;
   }
