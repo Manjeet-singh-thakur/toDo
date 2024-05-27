@@ -58,9 +58,9 @@ select {
     outline: none;
     border: 1px solid;
   }
-  .logo {
+  /* .logo {
     display: block;
-  }
+  } */
   .text {
     display: none;
   }
