@@ -156,14 +156,14 @@ const Todo = () => {
               {item.priority === "3"
                 ? "High"
                 : item.priority === "2"
-                  ? "Medium"
-                  : "Low"}
+                ? "Medium"
+                : "Low"}
             </p>
             <p
               style={{
                 display: "flex",
                 alignContent: "center",
-                alignItems: "center",
+                alignItems: "baseline",
               }}
             >
               <p className="dot"></p> : {item.task}
@@ -248,11 +248,9 @@ const Todo = () => {
             type="text"
             value={value}
             onChange={(e) => {
-
               setValue(e.target.value);
               setError(false);
-            }
-            }
+            }}
             placeholder="Write Your Task"
           />
           <button
