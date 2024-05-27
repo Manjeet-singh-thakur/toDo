@@ -2,26 +2,27 @@
   "short_name": "To-Do App",
   "name": "To-Do By Manjeet",
   "icons": [
-    {
-      "src": "bird_2.jpg",
+     {
+      "src": "key.jpeg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/jpg"
+      "type": "image/jpeg"
     },
     {
-      "src": "bird_2.jpg",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/jpg"
+      "type": "image/x-icon"
     },
     {
-      "src": "bird_2.jpg",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/jpg"
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
     },
     {
-      "src": "bird_2.jpg",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/jpg"
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
+   
   ],
   "start_url": ".",
   "display": "standalone",
