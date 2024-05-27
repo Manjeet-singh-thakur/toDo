@@ -47,9 +47,9 @@ select {
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.377);
 }
-/* .logo {
-  display: block;
-} */
+.logo {
+  display: none;
+}
 .main {
   font-size: 35px;
   font-weight: 800;
