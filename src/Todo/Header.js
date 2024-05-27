@@ -4,9 +4,9 @@ const Header = () => {
     <>
       <nav className="main">
         <div className="logo">
-          <img src="bird_2.jpg" alt="Logo" />
+          <img src="./key.jpg"alt="Logo" />
         </div>
-        <div className="text">To-Do</div>
+        <div className="">To-Do</div>
       </nav>
     </>
   );
