@@ -68,9 +68,13 @@ select {
   }
 
   .main {
+    width: 100%;
     padding: 0px;
     box-shadow: none;
     margin-bottom: -20px;
+    position: sticky;
+    top: 10px;
+    background-color: white;
   }
 
   .logo {
