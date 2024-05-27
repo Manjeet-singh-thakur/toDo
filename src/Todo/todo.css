@@ -80,15 +80,17 @@ select {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: black;
+    background:black;
     margin-right: 5px;
+    flex-shrink: 0;
   }
 
   .dot1 {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.377);
+    background: rgba(0, 0, 0, 0.479);
+    flex-shrink: 0;
   }
 
   .ol {
