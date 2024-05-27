@@ -8,19 +8,19 @@
       "type": "image/jpeg"
     },
     {
-      "src": "favicon.ico",
+      "src": "key.jpeg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/jpeg"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "key.jpeg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/jpeg"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "key.jpeg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/jpeg"
     }
   ],
   "start_url": ".",
