@@ -47,9 +47,9 @@ select {
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.377);
 }
-/* .logo {
+.logo {
   display: none;
-} */
+}
 
 @media (max-width: 768px) {
   .text {
@@ -58,9 +58,9 @@ select {
     outline: none;
     border: 1px solid;
   }
-  /* .logo {
+  .logo {
     display: block;
-  } */
+  }
   .text {
     display: none;
   }
@@ -135,5 +135,8 @@ select {
     margin-left: 2px;
     border: 1px solid;
     margin-top: 2px;
+  }
+  .main1 {
+    display: none;
   }
 }
