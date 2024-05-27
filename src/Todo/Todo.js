@@ -87,6 +87,40 @@ const Todo = () => {
     }
   };
 
+  const editSubTask = (index, subIndex, isCompleted) => {
+    const data = isCompleted ? [...comp] : [...list];
+    const newValue = prompt(
+      "Please enter a new value",
+      data[index].subtasks[subIndex]
+    );
+    if (newValue !== null && newValue.trim() !== "") {
+      const newData = data.map((item) => ({
+        ...item,
+        subtasks: [...item.subtasks],
+      }));
+      newData[index].subtasks[subIndex] = newValue;
+      isCompleted ? setComp(newData) : setList(newData);
+      localStorage.setItem(
+        isCompleted ? "completedList" : "todoList",
+        JSON.stringify(newData)
+      );
+    }
+  };
+
+  const deleteSubTask = (index, subIndex, isCompleted) => {
+    const data = isCompleted ? [...comp] : [...list];
+    const newData = data.map((item) => ({
+      ...item,
+      subtasks: [...item.subtasks],
+    }));
+    newData[index].subtasks.splice(subIndex, 1);
+    isCompleted ? setComp(newData) : setList(newData);
+    localStorage.setItem(
+      isCompleted ? "completedList" : "todoList",
+      JSON.stringify(newData)
+    );
+  };
+
   const addSubtask = (index, isCompleted) => {
     const data = isCompleted ? [...comp] : [...list];
     const newValue = prompt("Please enter a subtask");
@@ -116,14 +150,14 @@ const Todo = () => {
       })
       .map((item, index) => (
         <div key={index}>
-          <div style={{marginLeft:"5px"}}>
-            <p>
+          <div className="flow" style={{ marginLeft: "5px" }}>
+            <p className="priority">
               Priority Level :{" "}
               {item.priority === "3"
                 ? "High"
                 : item.priority === "2"
-                ? "Medium"
-                : "Low"}
+                  ? "Medium"
+                  : "Low"}
             </p>
             <p
               style={{
@@ -143,6 +177,18 @@ const Todo = () => {
                   key={subIndex}
                 >
                   <p className="dot1"></p> : {subtask}
+                  <button
+                    onClick={() => editSubTask(index, subIndex, isCompleted)}
+                    className="btn"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    onClick={() => deleteSubTask(index, subIndex, isCompleted)}
+                    className="btn"
+                  >
+                    Delete
+                  </button>
                 </li>
               ))}
             </ol>
@@ -201,7 +247,12 @@ const Todo = () => {
             className="text1"
             type="text"
             value={value}
-            onChange={(e) => setValue(e.target.value)}
+            onChange={(e) => {
+
+              setValue(e.target.value);
+              setError(false);
+            }
+            }
             placeholder="Write Your Task"
           />
           <button

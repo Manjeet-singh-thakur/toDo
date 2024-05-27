@@ -57,7 +57,7 @@ select {
   }
 
   select {
-    padding: 7px;
+    padding: 2px;
     border: 1px solid black;
     background: no-repeat;
     margin-left: 2px;
@@ -68,8 +68,14 @@ select {
     display: flex;
     align-items: center;
     gap: 7px;
+    margin-top: -15px;
   }
-
+  .priority {
+    margin-bottom: -13px;
+  }
+  .btn {
+    padding: 2px;
+  }
   .dot {
     width: 10px;
     height: 10px;
@@ -114,7 +120,7 @@ select {
 
   button {
     background-color: transparent;
-    padding: 7px;
+    padding: 3px;
     width: auto;
     margin-left: 2px;
     border: 1px solid;
