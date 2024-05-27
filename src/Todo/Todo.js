@@ -193,6 +193,7 @@ const Todo = () => {
               ))}
             </ol>
           </div>
+
           <button onClick={() => deleteValue(index, isCompleted)}>
             Delete
           </button>
@@ -222,6 +223,7 @@ const Todo = () => {
           {!isCompleted && (
             <button onClick={() => completed(index)}>Mark Complete</button>
           )}
+          <hr></hr>
         </div>
       ));
   };
