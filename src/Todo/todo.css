@@ -4,30 +4,35 @@
   outline: none;
   border: 1px solid;
 }
+
 .text {
   width: 40%;
   padding: 8px;
   outline: none;
   border: 1px solid;
 }
+
 .show {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 400px;
 }
+
 .text1 {
   width: 40%;
   padding: 8px;
   outline: none;
   border: 1px solid;
 }
+
 select {
   padding: 7px;
   border: 1px solid black;
   background: no-repeat;
   margin-left: 2px;
 }
+
 .dot {
   width: 10px;
   height: 10px;
@@ -35,12 +40,14 @@ select {
   background: black;
   margin-right: 5px;
 }
+
 .dot1 {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.377);
 }
+
 @media (max-width: 768px) {
   .text {
     width: 90%;
@@ -48,17 +55,20 @@ select {
     outline: none;
     border: 1px solid;
   }
+
   select {
-    padding: 6px;
+    padding: 5px;
     border: 1px solid black;
     background: no-repeat;
     margin-left: 2px;
   }
+
   .li1 {
     display: flex;
     align-items: center;
     gap: 7px;
   }
+
   .dot {
     width: 10px;
     height: 10px;
@@ -66,6 +76,7 @@ select {
     background: black;
     margin-right: 5px;
   }
+
   .dot1 {
     width: 10px;
     height: 10px;
@@ -80,22 +91,26 @@ select {
     word-wrap: break-word;
     word-break: break-all;
   }
+
   .text1 {
     width: 80%;
     padding: 8px;
     outline: none;
     border: 1px solid;
   }
+
   .show {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 147px;
   }
+
   .incom {
     text-align: left;
     margin-left: 5px;
   }
+
   button {
     background-color: transparent;
     padding: 7px;
