@@ -166,7 +166,7 @@ const Todo = () => {
                 alignItems: "baseline",
               }}
             >
-              <p className="dot"></p> : {item.task}
+              <span className="dot"/>: {item.task}
             </p>
 
             <ol className="ol">
@@ -176,7 +176,7 @@ const Todo = () => {
                   style={{ listStyle: "none" }}
                   key={subIndex}
                 >
-                  <p className="dot1"></p> : {subtask}
+                  <span className="dot1"/> : {subtask}
                   <button
                     onClick={() => editSubTask(index, subIndex, isCompleted)}
                     className="btn"
