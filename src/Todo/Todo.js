@@ -166,7 +166,7 @@ const Todo = () => {
                 alignItems: "baseline",
               }}
             >
-              <span className="dot"/>: {item.task}
+              <span className="dot" />: {item.task}
             </p>
 
             <ol className="ol">
@@ -176,7 +176,7 @@ const Todo = () => {
                   style={{ listStyle: "none" }}
                   key={subIndex}
                 >
-                  <span className="dot1"/> : {subtask}
+                  <span className="dot1" /> : {subtask}
                   <button
                     onClick={() => editSubTask(index, subIndex, isCompleted)}
                     className="btn"
@@ -223,7 +223,7 @@ const Todo = () => {
           {!isCompleted && (
             <button onClick={() => completed(index)}>Mark Complete</button>
           )}
-          <hr></hr>
+          <hr style={{ border:"1px solid black", marginTop:"20px"}}></hr>
         </div>
       ));
   };
