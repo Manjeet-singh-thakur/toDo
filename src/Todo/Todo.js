@@ -206,9 +206,10 @@ const Todo = () => {
                 value={item.priority}
                 onChange={(e) => setPrior(e.target.value, index)}
               >
+                {" "}
+                <option value="1">Low</option>
                 <option value="3">High</option>
                 <option value="2">Medium</option>
-                <option value="1">Low</option>
               </select>
             </>
           )}
@@ -223,7 +224,7 @@ const Todo = () => {
           {!isCompleted && (
             <button onClick={() => completed(index)}>Mark Complete</button>
           )}
-          <hr style={{ border:"1px solid black", marginTop:"20px"}}></hr>
+          <hr style={{ border: "1px solid black", marginTop: "20px" }}></hr>
         </div>
       ));
   };
